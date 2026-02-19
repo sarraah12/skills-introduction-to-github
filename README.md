@@ -50,12 +50,16 @@ Check out these resources to learn more or get involved:
 
 ### Dépannage rapide : erreur d'installation STM32CubeIDE
 
-Si l'installation ou le démarrage de STM32CubeIDE 1.16.0 échoue avec le message « An error has occurred. See the log file …\configuration\\*.log », essayez ces étapes :
+Si l'installation ou le démarrage de STM32CubeIDE 1.16.0 échoue avec le message « An error has occurred. See the log file …\configuration\*.log », essayez ces étapes :
 
-1. Ouvrez le fichier de log indiqué (ex. `C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\configuration\<id>.log`) pour repérer l'erreur exacte.
+1. Ouvrez le fichier de log indiqué (ex. `C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\configuration\*.log`) pour repérer l'erreur exacte.
 2. Supprimez le dossier de configuration corrompu : fermez l'IDE, puis supprimez `C:\ST\STM32CubeIDE_1.16.0\STM32CubeIDE\configuration` avant de relancer l'outil.
 3. Relancez l'IDE avec un nettoyage de cache : exécutez `stm32cubeide.exe -clean -clearPersistedState`, ou réinstallez en tant qu'administrateur après avoir désactivé temporairement l'antivirus.
-4. Vérifiez les prérequis : droits en écriture sur `C:\ST`, espace disque suffisant, chemin sans caractères spéciaux, et téléchargez à nouveau l'installateur si nécessaire.
+4. Vérifiez les prérequis :
+   - droits en écriture sur `C:\ST`
+   - espace disque suffisant
+   - chemin sans caractères spéciaux
+   - retéléchargez l'installateur si nécessaire
 
 <footer>
 
